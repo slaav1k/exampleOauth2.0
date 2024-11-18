@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: client-auth-application
+  security:
+    oauth2:
+      client:
+        registration:
+          admin-client:
+            provider: admin-provider
+            client-id: admin-client-3732d774
+            client-secret: secret-dc9abad3
+            authorization-grant-type: client_credentials
+            scope: read
+        provider:
+          admin-provider:
+            token-uri: http://localhost:9000/oauth2/token
+server:
+  port: 8082
