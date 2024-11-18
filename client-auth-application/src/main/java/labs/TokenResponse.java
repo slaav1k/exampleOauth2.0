@@ -2,8 +2,6 @@ package labs;
 
 import java.time.Instant;
 
-// @Data
-// @AllArgsConstructor //- Desabilitado por incompatibilidade (não funcional)
 public class TokenResponse {
 
     private String accessToken;
